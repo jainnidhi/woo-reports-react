@@ -1,0 +1,213 @@
+.wc-reports-filter {
+	/* padding: 30px; */
+	position: relative;
+}
+
+.wc-reports-filter * {
+	box-sizing: border-box;
+}
+
+.wc-reports-filter .header {
+	width: 250px;
+	float: left;
+	background-color: #2f4050;
+	font-size: 13px;
+	font-weight: 600;
+	position: fixed;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.wc-reports-filter .header .reports-title {
+	color: #a7b1c2;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	margin: 0;
+	padding: 20px;
+}
+
+.wc-reports-filter .header ul {
+	margin: 0;
+	padding: 0;
+	background-color: #293846;
+}
+
+.wc-reports-filter .header ul li {
+	display: block;
+	position: relative;
+}
+
+.wc-reports-filter .header ul li ul {
+	padding-left: 30px;
+}
+
+.wc-reports-filter .header ul li a {
+	text-decoration: none;
+	padding: 9px 20px;
+	display: block;
+	color: #a7b1c2;
+}
+
+.wc-reports-filter .main-header > ul > li > a:after {
+	content: "";
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #a7b1c2;
+}
+
+.wc-reports-filter .header ul li a:hover {
+	color: #fff;
+}
+
+.wc-reports-filter .content {
+	margin-left: 250px;
+}
+
+.wc-reports-filter .content-title {
+	margin: 0;
+	padding: 20px;
+	font-size: 24px;
+}
+
+.wc-reports-filter .content-body {
+	padding: 20px;
+}
+
+.wc-reports-filter .content select {
+	padding: 10px;
+    display: block;
+    height: 30px;
+	margin-bottom: 20px;
+}
+
+.wc-reports-filter .content select:focus {
+	outline: 0;
+}
+
+.wc-reports-filter .content .state-range {
+	padding: 0 20px;
+}
+
+.wc-reports-filter .content .state-range ul {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ddd;
+}
+
+.wc-reports-filter .content .state-range li {
+	display: inline-block;
+	border-right: 1px solid #ddd;
+	padding: 8px 10px;
+}
+
+.wc-reports-filter .content .state-range li:last-child {
+	border-right: 0;
+}
+
+.wc-reports-filter .content .state-range li a {
+	color: #7d7d7d;
+	text-decoration: none;
+	display: block;
+}
+
+.wc-reports-filter .content .state-range li span {
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+.wc-reports-filter .content .state-range li input {
+	border: 0;
+	padding: 5px 0;
+	text-align: center;
+	width: 100px;
+	margin-left: 5px;
+	-webkit-appearance: none;
+}
+
+.wc-reports-filter .content .state-range li input:focus {
+	outline: none;
+}
+
+.wc-reports-filter .content .state-range li input::-webkit-inner-spin-button,
+.wc-reports-filter .content .state-range li input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.wc-reports-filter .content .state-range li input::-webkit-clear,
+.wc-reports-filter .content .state-range li input::-moz-clear,
+.wc-reports-filter .content .state-range li input::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.wc-reports-filter .content .state-range li button {
+	padding: 4px 8px;
+	-webkit-appearance: none;
+	background-color: #eee;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+
+.wc-reports-filter .content .state-range li button:focus {
+	outline: none;
+}
+
+.wc-reports-filter .content .state-range li a:hover,
+.wc-reports-filter .content .state-range li.is-active a {
+	color: #0707f3;
+}
+
+.chart-sidebar {
+	width: 220px;
+	float: left;
+}
+
+.chart-sidebar .chart-legend {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #dfdfdf;
+	font-size: 13px;
+}
+
+.chart-sidebar .chart-legend li {
+	display: block;
+	padding: 10px;
+	border-right: 5px solid #b1d4ea;
+    color: #aaa;
+	-webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    -webkit-box-shadow: inset 0 -1px 0 0 #dfdfdf;
+    box-shadow: inset 0 -1px 0 0 #dfdfdf;
+}
+
+.chart-sidebar .chart-legend li:last-child {
+	box-shadow: none;
+}
+
+.chart-sidebar .chart-legend li:hover {
+	-webkit-box-shadow: inset 0 -1px 0 0 #dfdfdf, inset 300px 0 0 rgba(156,93,144,.1);
+    box-shadow: inset 0 -1px 0 0 #dfdfdf, inset 300px 0 0 rgba(156,93,144,.1);
+    border-right: 5px solid #9c5d90!important;
+    padding-left: 20px;
+    color: #9c5d90;
+}
+
+.chart-sidebar .chart-legend li span {
+	display: block;
+}
+
+.chart-sidebar .chart-legend li .legend-title {
+	font-size: 20px;
+	color: #464646;
+}
+
+.chart-sidebar .chart-legend li .currency-symbol {
+	display: inline-block;
+}
